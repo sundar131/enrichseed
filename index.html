@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to SEED Website.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-light-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our Services</a>
+    <a href="#clients" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our Clients</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+  </div>
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#about" onclick="myFunction()" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="#services"  onclick="myFunction()" class="w3-bar-item w3-button w3-padding-large">Our Services</a>
+    <a href="#clients"  onclick="myFunction()" class="w3-bar-item w3-button w3-padding-large">Our Clients</a>
+    <a href="#contact" onclick="myFunction()" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+  </div>
+  </div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:50px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <a href="index.html"><img src="images/logo2.jpg" alt="" /></a>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+
+      <img src="images/IMG-20170717-WA0004.jpg" style="width:100%" class="w3-animate-zoom">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-animate-fading res-text">Safety training services</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/sg2.jpg" style="width:100%" class="w3-animate-zoom">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-animate-fading res-text" >Safety Consultant</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/audit.png" style="width:100%" class="w3-animate-zoom">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-animate-fading res-text" >Safety Audits</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container" id="about">
+  
+      <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Welcome to SEED!!!</span>
+    </div>
+    <div class="w3-left-align">
+      <p>Safety Enrichment Education for Development  - SEED an ISO 9001: 2015 Certified Company started to improve the safety, health and environment among industries, construction sites and for general public. Our aim is to prevent death, injury and illness by educating safety to all. </p>
+
+<p>To achieve the above target, we issue safety pamphlets, safety banners on important days on free of cost to the industries and we also support the families of industrially injured people financially and morally. We also conduct free safety training programs in medium based industries, small construction companies, schools, ITI’s, colleges and other educational institutions to spread the safety awareness. </p>
+
+<p>SEED is determined to carry the values and standards of safety as it grows. </p>
+
+<p>SEED is known as a “can do” organization, available 24 hrs a day, 7 days a week to respond to all your safety needs, from initial workforce training till field safety solutions. </p>
+
+<h5><b>Mission: </b></h5>
+<p>To enable aspirants to pursue a successful career as professionals. 
+To set and achieve safety standard across various industrial segments in different geographies. </p>
+
+
+<h5><b>Vision: </b></h5>
+
+<p>To gain a reputation by training and qualifying professionals through innovation and to grow along with them in creativity, quality, productivity, team work and set exemplary ethical values.</p> 
+    </div>
+  
+
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container" id="services">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Services</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>COMPETENCY CERTIFICATE</h3>
+      <input type="checkbox" class="read-more-state" id="post-3" />
+      <p class="read-more-wrap">Under the provisions of the Factories Act, 1948 and the State Factories Rules, equipments such as Hoist and Lift, Lifting Machines, <span class="read-more-target"> Lifting Tackles, Power presses, Conveyor, Safety belt, Oven and Drier and etc. are required to be periodically examined and tested by a<span class="read-more-target"> "Competent Person" approved by the Chief Inspector of Factories, for the period and purpose mentioned in the Certificate of Competency granted to such as a person / institution. We provide service on the same.</span></p>
+      <label for="post-3" class="read-more-trigger"></label>
+      <p class="w3-opacity"><a href="#rules">More about the rules...</a></p>
+      <p class="w3-opacity"><a href="#person">About the Competent Person Profile...</a></p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>SAFETY AUDITS </h3>
+      <input type="checkbox" class="read-more-state" id="post-6" />
+      <p class="read-more-wrap">Safety Risk Audits identify risks and hazards within your workplace and provide an action plan to minimize/eliminate the risks and hazards. Our safety audit should be carried out by an occupational health and safety professional from various industries and experience. A safety risk audit will address matters that are clearly in the interest <span class="read-more-target"> of the productivity and safety of the workplace and therefore it resolves the safety management issues.</span></p>
+      <label for="post-6" class="read-more-trigger"></label>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>FACTORY LAYOUT</h3>
+      <p>New Factories should have their Building Plan & Machinery Lay-out Plan approved by Factory Inspectorate. For the same, the regular plans should fulfill the stipulations laid down in Factories Act & Rules. We have experience in preparing such plans and have them approved with necessary liaison.</p>
+      <input type="checkbox" class="read-more-state" id="post-2" />
+      <p class="read-more-wrap">Existing Factories keep adding, <span class="read-more-target">deleting or altering the position of their machinery or go for an expansion with both building and machinery. Such changes need to be brought to the notice of Factory Inspectorate and approval obtained for the changes, which can be obtained by us.</span></p>
+      <label for="post-2" class="read-more-trigger"></label>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16" style="height: 400px">
+      <h3>FACTORY STABILITY CERTIFICATE</h3>
+<input type="checkbox" class="read-more-state" id="post-1" />
+      <p class="read-more-wrap">As per Rule 12 B and Section 6, any building which is to be used as factory building is required to have the approval of factory building plan, for that you need the stability certificate, The stability certificate is required for taking <span class="read-more-target"> Factory Building Plan approval from the Director, Industrial Safety and  Health, The Competent person issue the certificate. Now this building plan approval is mandatory for issuing License for factory.  
+      <br/><br/>Factories are mandated to obtain Building Stability Certificate once in 3 years, and Installation/Construction Certificates every once after revised approval is obtained. We shall visit your factory and issue the relevant certificates after due inspection.</span></p>
+
+      <label for="post-1" class="read-more-trigger"></label>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container w3-padding-16">    
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>SAC APPROVAL</h3>
+      <input type="checkbox" class="read-more-state" id="post-4" />
+      <p class="read-more-wrap">As per the first schedule (see section 2 (cb)), your factory comes under hazardous process. Due to the above reasons, As per Chapter IV – A, section 41 A,  If a factory involving hazardous process should get<span class="read-more-target"> grant of permission for initial location or expansion of any such factory, from Site Appraisal Committee. (That means SAC makes its recommendations to the Government for grant of permission for initial locations or expansion of a factory)</span></p>
+      <label for="post-4" class="read-more-trigger"></label>
+      <p class="w3-opacity">Reference Book:</p>
+      <ul><li>Factories Act 1948 Chapter IV-A, Section 41A</li></ul>
+</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>On-Site Emergency Plan (OSEP)</h3>     
+      <p >The main objectives of Emergency Plan are, </p>
+<ul><li> To control and contain the incident and if possible, try to eliminate it. </li>
+<li>To minimize the impact of the incident on persons, property and environment.</li>
+</ul>
+ <input type="checkbox" class="read-more-state" id="post-5" />
+<p class="read-more-wrap"><span class="read-more-target">If an accident/incident occurs in an Industry, its impact is confined or restricted to the Industry premises, involving only its employees and the property within is termed as On-On-Site Emergency.
+It is a systematic plan or procedure which is designed to control emergency situations so as to provide safety and security to the stakeholders until the business continuity or normal business plan resumes.
+<b>Statutory Provision</b>
+Under Section 41(B) (4) every Occupier is to prepare Onsite Emergency Plan and detailed disaster control measures for his factory. Again under provision of Rule 13 of the Manufacture, Storage and Import of Hazardous Chemicals Rules 1989, it was urged that the occupier shall prepare and keep up to date On-Site Emergency plan containing details how major accidents will be dealt with on the site on which the industrial activity is carried on and that plan shall include the name of the persons who is responsible for safety on the site and names of those who are authorized to take action in accordance with the plan in case of emergency. Preparation of On-Site Emergency Plan by the occupier is mandatory.
+</span></p>
+<label for="post-5" class="read-more-trigger"></label>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16" style="height: 400px">
+      <h3>ENVIRONMENTAL SERVICES</h3>
+      <p><ul>
+<li>Analysis of Water & Waste Water </li>
+<li>Treatability studies on Physical, Chemical, Biological treatment and Reverse Osmosis / Ultra filtration</li>
+<li>Air sampling and stack monitoring analysis </li>
+<li>Hazardous waste and solid waste management </li>
+<li>Environment impact assessment studies, Risk analysis, Risk assessments </li>
+</ul>
+</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16" style="height: 400px">
+      <h3>ACCIDENT INVESTIGATION</h3>
+<input type="checkbox" class="read-more-state" id="post-7" />
+      <p class="read-more-wrap">Reducing the occurrence of accidents is a key goal in achieving commercial and technical objectives at a facility. However, accidents inevitably still do occur and must be investigated to ascertain their causes and contributory factors. SEED’s specialist capability in this field provides <span class="read-more-target">the mechanism and mediums to identify key problem areas within the operation and to allow mitigation strategies to be formulated to improve personal safety.</span></p>
+      <label for="post-7" class="read-more-trigger"></label>
+    </div>
+  </div>
+
+   <!-- Grid -->
+  <div class="w3-row-padding" id="clients">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Clients</span>
+    </div>
+
+
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/clients.jpg"  style="width:100%">
+        
+      </div>
+    </div>
+
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/clients2.jpg"  style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding" >
+    <div class="w3-center w3-padding-64" id="rules">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Factory rules</span>
+    </div>
+
+
+   <div class="w3-border">
+<div class="w3-bar w3-theme" >
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'rule1')">List 1</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'rule2')">List 2</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-white" onclick="openCity(event,'rule3')">List 3</button>
+</div>
+
+<div id="rule1" class="w3-container city w3-animate-opacity" style="display: none;">
+  <h2>The Tamilnadu Factories Rule</h2>
+  <table class="w3-table w3-striped w3-bordered">
+<thead>
+<tr class="w3-theme w3-white">
+  <th>Act</th>
+  <th>Regarding</th>
+  <th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Rule 55 Section 28 </td>
+  <td>Hoists and lifts </td>
+  <td><ol stle="list-style-type: lower-alpha;"><li>Passenger lift </li><li>Goods lift </li><li>Goods hoist</li></ol></td>
+</tr>
+<tr >
+  <td>Rule 55 A Section 29 </td>
+  <td>Lifting machines, Chains, Ropes and Lifting tackles</td>
+  <td><ol stle="list-style-type: lower-alpha;"> <li>EOT crane / Jib Crane / Gantry Crane & All other Mobile Cranes </li><li>Electrical hoist / Electrical Winch</li><li>Fork lift / Stacker / Scissor Lift / Boom Lift</li><li>Hand Pallet Truck </li><li>Chain pulley block / Hand Lever Ratchet </li><li>Hooks,  Eye Bolt, Couplings & All Lifting Clamps</li><li>Web sling, Chain rope & Wire rope</li><li>‘D’ shackles & O Blong Master Link</li><li>Spreader Beam / Lifting Beam</li><li>Man Lifting Basket / Material Lifting Bucket</li> </ol></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+
+<div id="rule2" class="w3-container city w3-animate-opacity" style="display: none;">
+<h2>The Tamilnadu Factories Rule</h2>
+  <table class="w3-table w3-striped w3-bordered">
+<thead>
+<tr class="w3-theme w3-white">
+  <th>Act</th>
+  <th>Regarding</th>
+  <th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Rule 53 
+Section 21 (2) Schedule viii  </td>
+  <td>Power press </td>
+  <td><ol stle="list-style-type: lower-alpha;"><li> Molding machine </li> <li> Pressing machine </li><li>
+Blanking machine </li>
+<li>Drawing machine </li></ol></td>
+</tr>
+<tr >
+  <td>Rule 53 
+Section 21 (2) Schedule xi  </td>
+  <td>Conveyor </td>
+  <td><ol stle="list-style-type: lower-alpha;"><li>Belt conveyor </li><li>Gravity conveyor</li><li>Chain conveyor </li>
+<li>Bucket conveyor </li><li>Screw conveyor </li><li>Pneumatic conveyor</li></ol>  </td>
+</tr>
+  <td>Rule 61 A </td>
+  <td>Safety belt  </td>
+  <td>Harness with straps of not less than 5 cm and a ‘D’ ring with fastening rope. </td>
+</tr>
+<tr>
+  <td>Rule 61 B  </td>
+  <td>Oven and drier   </td>
+  <td><ol stle="list-style-type: lower-alpha;"><li>Receptacle</li><li>Enclosed structure</li><li>Box</li><li>Compartment</li><li>Used for baking, drying processing of any article or substance at a temperature above ambient</li></ol>  </td>
+</tr>
+<tr>
+  <td>Rule 61 P  </td>
+  <td>Thermic fluid heaters   </td>
+  <td>All heaters shall be of such construction of coils. </td>
+</tr>
+<tr>
+  <td>Rule 12 B 
+Section 6  </td>
+  <td>Stability certificate    </td>
+  <td>Factory building </td>
+</tr>
+<tr>
+  <td>Rule 95  </td>
+  <td>Dust extracting system   </td>
+  <td>Dust collector </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="rule3" class="w3-container city w3-animate-opacity" style="display: block;">
+  <h2>The Tamilnadu Factories Rule</h2>
+  <table class="w3-table w3-striped w3-bordered">
+<thead>
+<tr class="w3-theme w3-white">
+  <th>Act</th>
+  <th>Regarding</th>
+  <th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Rule 56 B 
+Section 31 </td>
+  <td>Pressure plant and Vessels
+(Thickness survey) </td>
+  <td><ol><li> Pressure vessel </li><li>Compressor cylinder </li><li>Steam engine or prime movers </li>
+<li>Oil separator </li><li>Air receiver </li><li>Steam separators </li><li>Steam strainers </li>
+<li>Air receiver for fire sprinkler </li><li>Air receiver for monotype machines </li>
+<li>Air vessels </li><li>Hydraulic cylinders </li><li>Cylinder connected with air loaded accumulator.</li> </td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+ <div class="w3-row-padding" id="person">
+ <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Competent Person Profile</span>
+    </div>
+   <div class="w3-half w3-grey w3-container" style="height: 700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>K.Prabhakaran</h1>
+      B.E.,  MIE.,CE,PGDPE., DIS .,NDT LEVEL - II 
+        <div class="w3-left-align w3-padding-large">
+        <p><b>Technical Qualification </b></p>
+<p><ul><li>Bachelor of Engineering (Mechanical) at Coimbatore Institute of Technology, Coimbatore</li>
+<li>Diploma in Industrial Safety at Annamalai University, Chidambaram.</li>
+<li>Post Graduate Diploma in Plastic Engineering at Central Institute of Plastics Engineering and Technology, Chennai.</li>
+</ul>
+
+</p>
+        <p><b>Summary of Experience</b> </p>
+<p><ul><li>Total 17 Years Industrial Experience in Manufacturing & Production Industries</li>
+<li>Last 7 Years in Training, Inspection, Audit and Consultation Experience.</li></ul></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-half w3-dark-grey w3-container" style="height: 700px">
+     <div class="w3-left-align w3-padding-large">
+       <p><b>Areas of Interest  </b></p>
+       <ul>
+        <li>Inspection & Certification </li>
+        <li>Safety Training</li>
+        <li>Safety Audits</li>
+        <li>Safety Consultation </li>
+        <li>Risk Management</li>
+        <li>Accident Investigation</li>
+        <li>NDT for Vessels (Non Destructive Test)</li>
+        </ul>
+<p><b>Inspection and Certification </b></p>
+Approved Competent Authority from Directorate of Industrial Safety and Health- for 
+<ul>
+<li>Rule 55 Sec 28  – Hoist and Lift</li>
+<li>Rule 55A Sec 29  – Lifting Tackles and Lifting Machines</li>
+<li>Rule 53(1), Sec 21(2), Schedule VIII – Power Press</li>
+<li>Rule 53(1), Sec 21(2), Schedule XI – Conveyor</li>
+<li>Rule 61 A – Safety Belt</li>
+<li>Rule 61 B – Oven and Drier</li>
+<li>Rule 61 P – Thermic Fluid Heater Coil</li>
+<li>Rule 95 – Sec 87 – Ventilation System</li>
+</ul>
+&nbsp;
+      </div>
+    
+  </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <div class="w3-half w3-margin-bottom">
+  <div class="w3-container w3-padding-16">
+    
+   <h3>Address</h3> 
+   <p class="w3-opacity">Safety Enrichment Education for Development</p>
+<p>No. 147/2,8A, Flat No:F-1, Jai Ganesh Nagar, Nanmangalam,Sholinganallur T.K Kancheepuram Dist., Chennai - 600 129
+
+    </p>
+     <p>
+     <b>E – mail :</b> prabhakaran@enrichseed.com, support@enrichseed.com
+    <p><b>Telephone:</b> +91 9445624635, +91 94444 87310</p>
+
+    </p>
+      </div>
+    </div> 
+<div id="myModal" class="modal">
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Thanks</h2>
+  </div>
+  <div class="modal-body">
+    <p> Thanks for Contacting us. You message has been sent! We will be in touch soon.</p>
+  </div>
+  
+</div>
+    </div>
+ 
+    <div class="w3-half w3-margin-bottom">
+      <form  action="https://www.safetylinks.in/mail" id="contactform" onsubmit="return submitMail();" target="_blank">
+        <div class="w3-card-4 ">
+          <div class="w3-container w3-padding-16">
+          <h3>Contact Form</h3>
+            <div class="w3-section ">
+              <label>Name*</label>
+              <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="name" required>
+            </div>
+            <div class="w3-section">
+              <label>Email*</label>
+              <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="email" required>
+            </div>
+            <div class="w3-section">
+              <label>Phone*</label>
+              <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="phone" required>
+            </div>
+            <div class="w3-section">
+              <label>Message*</label>
+              <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="message" required>
+            </div>
+            <button type="submit"   id="myBtn" class="w3-button w3-block w3-black">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+  <p>&copy Copyright 2017. All rights reserved</p>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+var nextSlideIndex =1;
+showDivs(slideIndex);
+
+var checkboxList = document.getElementsByClassName("read-more-state");
+
+for (var i = checkboxList.length - 1; i >= 0; i--) {
+  checkboxList[i].onchange = function() {
+if(this.checked) {
+      this.parentNode.style="height:auto";
+  } else {
+    this.parentNode.style="height: 400px";
+  }
+}
+}
+
+setInterval(function() {
+        nextSlideIndex = slideIndex +1;
+        currentDiv(nextSlideIndex);
+                
+    }, 10000);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-white", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-white";
+}
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+function submitMail() {
+
+  var contactform = document.getElementById('contactform');
+  
+  ajax.post('https://www.safetylinks.in/mail', serializeArray(contactform), function() {
+    modal.style.display = "block";
+  });
+
+   
+  return false;
+}
+
+function serializeArray(form) {  
+  var objects = {};  
+  if (typeof form == 'object' && form.nodeName.toLowerCase() == "form") {  
+ 
+  for(var i=0;i<form.elements.length-1;i++){ 
+    var  field = form.elements[i];
+           
+    objects[field.name] = field.value;     
+  }  
+  objects["seed"] = 'y';
+  }  
+  return objects;  
+  }  
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var ajax = {};
+ajax.x = function () {
+    if (typeof XMLHttpRequest !== 'undefined') {
+        return new XMLHttpRequest();
+    }
+    var versions = [
+        "MSXML2.XmlHttp.6.0",
+        "MSXML2.XmlHttp.5.0",
+        "MSXML2.XmlHttp.4.0",
+        "MSXML2.XmlHttp.3.0",
+        "MSXML2.XmlHttp.2.0",
+        "Microsoft.XmlHttp"
+    ];
+
+    var xhr;
+    for (var i = 0; i < versions.length; i++) {
+        try {
+            xhr = new ActiveXObject(versions[i]);
+            break;
+        } catch (e) {
+        }
+    }
+    return xhr;
+};
+
+ajax.send = function (url, callback, method, data, async) {
+    if (async === undefined) {
+        async = true;
+    }
+    var x = ajax.x();
+    x.open(method, url, async);
+    x.onreadystatechange = function () {
+        if (x.readyState == 4) {
+            callback(x.responseText)
+        }
+    };
+    if (method == 'POST') {
+        x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    }
+    x.send(data)
+};
+
+ajax.get = function (url, data, callback, async) {
+    var query = [];
+    for (var key in data) {
+        query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
+    }
+    ajax.send(url + (query.length ? '?' + query.join('&') : ''), callback, 'GET', null, async)
+};
+
+ajax.post = function (url, data, callback, async) {
+    var query = [];
+    for (var key in data) {
+        query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
+    }
+    ajax.send(url, callback, 'POST', query.join('&'), async)
+};
+</script>
+
+</body>
+</html>
